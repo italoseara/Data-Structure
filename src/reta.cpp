@@ -6,22 +6,9 @@ private:
     double a, b;
 
 public:
-    void reta() // deve criar a reta x = 0
-    {
-        // ??
-    }
-
-    void reta(double a, double b) // deve criar a reta ax + by = 1
-    {
-        this->a = a;
-        this->b = b;
-    }
-
-    void reta(double a, double b, double c) // deve criar a reta (a/c)x + (b/c)y = 1
-    {
-        this->a = a / c;
-        this->b = b / c;
-    }
+    Reta() : a(0), b(0) {}
+    Reta(double a, double b) : a(a), b(b) {}
+    Reta(double a, double b, double c) : a(a / c), b(b / c) {}
 
     bool horizontal() // retorna true se a == 0, false caso contrario
     {
