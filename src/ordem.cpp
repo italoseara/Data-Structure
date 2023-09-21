@@ -19,6 +19,7 @@ void select_sort(int *array, int size) {
 
 int main() {
     int size, *array;
+
     while (true) {
         std::cin >> size;
         if (size == 0) return 1;
